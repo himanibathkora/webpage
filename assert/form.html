@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML:form</title>
+    <style>
+      
+        div{
+            border-style: solid;
+            border: width 2px;
+            padding: 10px;
+            width: 700px;
+            margin:auto;
+            background-image: url(/home.webp);
+            background-size: cover;
+            color:white;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        form{
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+          
+        }
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color:black;
+        }
+        a:hover{
+            color:rgb(199, 33, 102);
+        }
+        @media screen and (max-width:700px){
+            div{
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        h1{
+            font-size: 30px;          
+        }
+        a:link{
+            font-size: 15px;
+        }
+        textarea{
+            width: 250px;
+            height: 100PX;
+
+        }
+    }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Registration form</h1><hr>
+    <form action="">
+        <lable for="fname"><b>Name:</b></lable>
+        <input type="text" id="fname" placeholder=" Enter your Name" ><br/><br/>
+        <lable for="email"><b>Email address:</b></lable>
+        <input type="email" id="email" placeholder="Enter Email address" ><br/><br/>
+        <lable for="password"><b>Password:</b></lable>
+        <input type="password" id="password" placeholder="Enter your password" >
+        <p><b>Gender:</b></p>
+        <input type="radio" value="male" name="gender" id="1">
+        <label for=1>Male</label>
+        <input type="radio" value="female" name="gender" id="2">
+        <label for=2>Female</label>
+        <input type="radio" value="female" name="gender" id="3">
+        <label for=3>Other</label>
+        <p><b>Course: </b></p>
+        <select name="course" id="4" >
+            <option value="BBA">BBA</option>
+            <option value="BCA">BCA</option>
+            <option value="HM">HM</option>
+            <option value="BSC CS">BSC cs</option>
+            <option value="BSC IT">BSC IT</option>
+        </select>
+        <BR/><br/>
+        <lable for="DOB"><b>Date Of Birth:</b></lable>
+        <input type="date" id="DOB" > 
+        <br/><br/>
+        <lable for="number"><b>Phone Number:</b></lable>
+        <input type=t id="number" placeholder="Enter Phone Number" >
+        <br><br>
+        <lable for="address"><b>Address:</b></lable><br>
+        <textarea name="address" id="address" cols="60" rows="3" placeholder="enter your address...." ></textarea>
+        <br/><br/>
+        <lable for="photo"><b>Add your photo:</b></lable>
+        <input type="file" id="photo ">
+        <br><br>
+       <button >SUBMIT</button>
+        <br><br>
+        <a href="https://www.google.com" target="_blank">click here for more infornamtion</a><br/>
+        
+        <a href="http://lms.amrapali.ac.in/aits/login/index.php"  target="_blank">click here for more infornamtion</a><br/>
+        <a href="https://www.java.com" target="_blank">click here for more infornamtion</a><br/>
+        <a href="https://www.yaahoo.com" target="_blank">click here for more infornamtion</a><br/>        
+    </form>
+    </div>
+</body>
+</html>

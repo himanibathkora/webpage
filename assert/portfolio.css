@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;
+    background-color: black;  
+    box-sizing: border-box;
+}
+button{
+    color: white;
+    background-color: brown;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 25px;
+}
+ button:hover, .aboutme .text button:hover{
+    background-color:white;
+    color: brown;
+ }
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: bold;
+}
+.header .logo a{
+    color:white;
+    padding: 30px;
+}
+.header .logo span{
+    color: brown;
+}
+.header .sidebar li{
+    display: inline;
+    padding: 20px;
+
+}
+.header .sidebar a{ 
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+}
+.header .sidebar a:hover{
+    color: brown;
+}
+.content{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+ .social-links li {
+    list-style: none;
+    display: inline;
+  
+}
+.main{
+    margin-left: 40px;
+}
+ .main #text1,#text2,#text3{
+        font-size: 35px;
+        font-weight: bold;
+        color: white;    
+}
+/* .main button{
+    color: white;
+    background-color: brown;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 25px;
+}
+.main button:hover, .aboutme .text button:hover{
+    background-color:white;
+    color: brown;
+} */
+.content img{
+    max-width: 100%;
+    height: 500px;
+    margin-left: 150px;
+}
+.image{
+    flex-basis: 50%;
+}
+#text3 span{
+    color: brown;
+}
+.aboutme{
+    color: white;
+    padding:30px;
+}
+.aboutme h1{
+    text-align: center;
+    color:white;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+ .title::after,.title::before{
+    content: "__";
+    color:brown;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box .image1 img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    padding: 20px;
+    border-radius: 50px;
+}
+.box .text{
+    width: 55%;
+    padding:40px 80px;
+  
+}
+.box .text p{
+    margin:20px 0px;
+}
+.box .text span{
+    color: brown;
+}
+/* .box .text button{
+    color: white;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 25px;    
+} */
+section{
+   
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;   
+}
+#t1{
+    font-size: 48px;
+}
+#t2{
+    font-size: 72px;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 0%;
+    justify-content: space-between;
+}
+.web,.app,.security{
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    max-width: 400px;
+    transition: all 1s;
+    border:2px solid black; 
+}
+.web:hover,.app:hover,.security:hover{
+    border:3px solid brown;
+    
+}        
+.services img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+.myskill h1{
+    text-align: center;
+    color:white;
+    margin-bottom: 10px;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.myskill{
+    color: white;
+    padding:30px;
+}

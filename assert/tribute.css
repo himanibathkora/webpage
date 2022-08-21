@@ -1,0 +1,49 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.top h1{
+    font-size:80px;
+    font-weight: bold;
+    margin: 0;
+    text-align: right;
+}
+.top h3{
+    margin: 0%;
+    text-align: right;
+}
+.about h2{
+    font-size:40px;
+    margin: 0;
+}
+.about{
+    font-size: 18px;
+}
+.page{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.content{
+    background-color:lightblue;
+    /* min-height: 100vh; */
+    animation:sample 10s infinite alternate;  
+    padding: 10px;
+}
+@keyframes sample{
+    100%{ background-color: brown; }
+    50%{background-color: blueviolet;}
+    0%{ background-color: chartreuse;}
+}
+a:hover{
+    color: black;
+}
+@media screen and (max-width:700px) {
+    .top h1{
+        font-size:60px;
+        text-align: right;
+        font-weight: bold;
+        padding: 10px;
+    }
+}
