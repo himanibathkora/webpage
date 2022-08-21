@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab</title>
+    <style> 
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        margin: 50px;
+        background-color: black;
+    }
+    .tab-wrap{
+        width: 60%;
+        list-style: none;
+        position: relative;
+    }
+    .tab-wrap input[type=radio]{
+        position: absolute;
+        top:-9999px;
+        left:-9999px;
+    }
+    .tab-wrap li{
+        float: left;
+        display: block;
+    }
+    .tab-wrap label{
+        background-color: darkolivegreen;
+        color: coral;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 15px;
+        cursor: pointer;
+        margin-left: 10px;
+        font-weight:bold;
+
+    }
+   .content{
+        background-color:cornflowerblue;
+        padding: 15px;
+        border-radius: 0px 4px 4px 4px;
+        position: absolute;
+        left:0%;
+        top:30px;
+        width: 100%;
+        margin: 10px;
+        display: none;
+
+    }
+    .tab-wrap [id^=tab]:checked + label{
+        background-color: white;
+    }
+    .tab-wrap [id^=tab]:checked ~.content{
+        display: block;
+    }
+    </style>
+</head>
+<body>
+        <ul class="tab-wrap">
+            <li>
+                <input type="radio" id="tab1" name="tab" checked>
+                <label for="tab1">tab 1</label>
+                <div class="content">
+                    <h1>tab 1</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo! Eos, sequi quod! Debitis, suscipit ducimus. Quidem aut dicta recusandae!</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="tab2" name="tab" >
+                <label for="tab2">tab 2</label>
+                <div class="content">
+                    <h1>tab 2</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo! Eos, sequi quod! Debitis, suscipit ducimus. Quidem aut dicta recusandae!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nisi, ab vel ipsum eveniet aut excepturi? Accusamus rem recusandae ab!</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" id="tab3" name="tab" >
+                <label for="tab3">tab 3</label>
+                <div class="content">
+                    <h1>tab 3</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, illo! Eos, sequi quod! Debitis, suscipit ducimus. Quidem aut dicta recusandae!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsam deleniti, saepe, ducimus consequatur blanditiis aliquid quidem reiciendis reprehenderit in cumque? Reiciendis distinctio quam dolore asperiores voluptatibus commodi ex hic.</p>
+                </div>
+            </li>
+        </ul>
+   
+</body>
+</html>

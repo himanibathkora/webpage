@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* .header{
+           border:1px solid black;
+        } */
+        /* .header> ul{
+            background-color: burlywood;
+        } */
+        .header ul{
+            background-color: burlywood;
+            list-style: none;
+            margin: 0%;
+            padding: 0%;
+            float: left;
+        }
+        .header ul a{
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 30px;
+            padding:0px 10px;
+            text-transform: capitalize;
+            display: block;
+        }
+        .header ul li{
+            float: left;
+            position: relative;
+          
+            /* margin: 0%;
+            padding: 0%; */
+        }
+        .header ul ul{
+            position: absolute;
+            background-color: darkcyan;
+            /* top: 100%;
+            left: 0%; */
+            display: none;
+        }
+        .header ul ul ul{
+            top: -4px;
+            left: 100%;
+        }
+        .header ul li:hover > ul{
+            display: block;
+        }
+        .header ul li:hover{
+            background-color:darkblue ;
+        }
+        .header ul ul li{
+        border-left: 2px solid  darkcyan;}
+        .header ul ul li:hover{
+            border-left: 4px solid burlywood;}
+        
+
+</style>
+</head>
+<body>
+    <div class="header">
+       <!-- <h1>DROPDOWN MENU</h1> -->
+        <ul>
+       <li><a href="">Menu1</a></li>
+       <li>
+            <a href="">Menu2</a>
+            <ul>
+            <li><a href="">subMenu1</a></li>
+            <li>
+                <a href="">subMenu2</a>
+                    <ul>
+                    <li><a href="">deepsubMenu1</a></li>
+                    <li><a href="">deepsubMenu2</a></li>
+                    <li><a href="">deepsubMenu3</a></li>
+                    </ul>
+            </li>
+            <li><a href="">subMenu3</a></li>
+            </ul>
+        </li>
+       <li><a href="">Menu3</a></li>
+       <li>
+        <a href="">Menu4</a>
+        <ul>
+            <li><a href="">subMenu1</a></li>
+            <li>
+                <a href="">subMenu2</a>
+                <ul>
+                    <li><a href="">deepsubMenu1</a></li>
+                    <li><a href="">deepsubMenu2</a></li>
+                    <li><a href="">deepsubMenu3</a></li>
+                </ul>
+            </li>
+            <li><a href="">subMenu3</a></li>
+        </ul>
+    </li>
+       <li><a href="">Menu5</a></li>
+        </ul>
+    </div>
+</body>
+</html>
