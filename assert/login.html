@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpage</title>
+    <style>
+        body{
+            margin: 0%;
+            background-image:url(/login1.webp);
+            background-size: cover;
+            font-size: 25px;
+            color: white; 
+            height: 100vh;        
+        }
+        h1{
+            padding: 40PX;
+        }
+        #username,#password{
+            font-size: 20px;
+        }
+        button{
+            font-size: 20px;
+        }
+        @media screen and (max-width:700px){
+            h1{
+            padding: 20PX ;
+            font-size: 30SPX;
+        }
+        #username,#password{
+            margin: 10PX;
+        }
+        body{
+            /* height: 700PX; */
+            font-size: 25px;
+            color: white;
+            /* background-repeat: no-repeat; */
+        }
+        }
+    </style>
+
+</head>
+<body>
+     <center><h1>WELCOME TO LOGIN PAGE</h1></center>
+    <center> 
+     <div class="container">
+        <label for="username">Username or Email Address</label><br/>
+        <input type="text,email" id="username" placeholder="Enter Username"><br/><br/>
+        <label for="password">Password</label><br/>
+        <input type="password" id="password" placeholder="Enter password"> <br/><br/>
+        <button onclick="login()">SUBMIT</button>
+    </div>
+</center> 
+    <script type="text/javascript" >
+        function login(){
+            var uname=document.getElementById("username").value;
+            var pass=document.getElementById("password").value;
+            if (uname=="himanibathkora" && pass=="Himani1234"){
+                location.assign("/allcontent.html");
+            }
+            else if(uname!="himanibathkora" ){
+                alert("Worng USername");
+            }
+            else if(pass!="Himani1234"){
+                alert("wrong password");
+            }
+        }
+    </script>
+</body>
+</html>

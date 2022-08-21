@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            margin: 0%;
+            background-image: url(/HOME2.jpg);
+            background-size: cover;
+        }
+        .home{
+            max-width: 100%;
+            height:100vh;
+            padding: 150PX;    
+        }
+        .home h1{
+            text-shadow: 2px 2px 5px palevioletred;
+            font-size: 50px;
+        }
+        .home p{
+          font-size: 25px;
+        }
+        button{
+            font-size: 25px;
+            background-color: blue;
+        }
+        @media screen and (max-width:700px){
+            .home p{
+          font-size: 20px;
+          margin: 10PX;
+        } 
+        .home h1{
+            text-shadow: 2px 2px 5px palevioletred;
+            font-size: 40px;
+            margin: 10PX;
+        }
+        .home{
+            /* max-width: 100%; */
+            height:100vh;
+            padding: 50PX;    
+        }
+        button{
+            font-size: 20px;
+            background-color: blue;
+            margin: 10PX;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <h1>WELCOM TO OUR WEBSITE </h1><br/>
+        <P>Lorem,ipsam voluptatum inventore a ipsum, aspernatur<br>
+             maiores ex nam consectetur praesentium cum.</P><br>
+        <button onclick="fun1()" >READ MORE</button>
+    </div>
+    <script>
+        function fun1(){
+            location.assign("/login.html");
+        }
+    </script>
+
+</body>
+</html>
