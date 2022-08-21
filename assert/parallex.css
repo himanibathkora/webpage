@@ -5,15 +5,15 @@ body{
     color: #666;
 }
 .pimg1{
-    background-image: url(/forest1.jpg);
+    background-image: url(./forest1.jpg);
     min-height: 500px;
 }
 .pimg2{
-    background-image: url(/forest2.jpg);
+    background-image: url(./forest2.jpg);
     min-height: 500px;
 }
 .pimg3{
-    background-image: url(/forest3.webp);
+    background-image: url(./forest3.webp);
     min-height: 500px;
 }
 .pimg1,.pimg2,.pimg3{
